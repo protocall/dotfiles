@@ -1,0 +1,289 @@
+# forked/custom solarized 256-dark for dir_colors file
+
+# based off:
+# https://github.com/seebi/dircolors-solarized
+# used under Do What The Fuck You Want To Public License (WTFPL)
+# http://sam.zoy.org/wtfpl/
+
+# Term Section
+TERM Eterm
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM eterm-color
+TERM gnome
+TERM gnome-256color
+TERM jfbterm
+TERM konsole
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM rxvt
+TERM rxvt-256color
+TERM rxvt-cygwin
+TERM rxvt-cygwin-native
+TERM rxvt-unicode
+TERM rxvt-unicode256
+TERM rxvt-unicode-256color
+TERM screen
+TERM screen-256color
+TERM screen-256color-bce
+TERM screen-256color-s
+TERM screen-256color-bce-s
+TERM screen-bce
+TERM screen-w
+TERM screen.linux
+TERM vt100
+TERM xterm
+TERM xterm-16color
+TERM xterm-256color
+TERM xterm-88color
+TERM xterm-color
+TERM xterm-debian
+
+# standard colors
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+#
+# Text 256 color coding:
+# 38;5;COLOR_NUMBER
+# Background 256 color coding:
+# 48;5;COLOR_NUMBER
+
+NORMAL 00;38;5;244 # no color code at all
+#FILE 00 # regular file: use no color at all
+RESET 0 # reset to "normal" color
+DIR 00;38;5;33 # directory 01;34
+LINK 01;38;5;37 # symbolic link. (If you set this to 'target' instead of a
+ # numerical value, the color is as for the file pointed to.)
+MULTIHARDLINK 00 # regular file with more than one link
+FIFO 48;5;230;38;5;136;01 # pipe
+SOCK 48;5;230;38;5;136;01 # socket
+DOOR 48;5;230;38;5;136;01 # door
+BLK 48;5;230;38;5;244;01 # block device driver
+CHR 48;5;230;38;5;244;01 # character device driver
+ORPHAN 48;5;235;38;5;160 # symlink to nonexistent file, or non-stat'able file
+SETUID 48;5;160;38;5;230 # file that is setuid (u+s)
+SETGID 48;5;136;38;5;230 # file that is setgid (g+s)
+CAPABILITY 30;41 # file with capability
+STICKY_OTHER_WRITABLE 48;5;64;38;5;230 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 48;5;235;38;5;33 # dir that is other-writable (o+w) and not sticky
+STICKY 48;5;33;38;5;230 # dir with the sticky bit set (+t) and not other-writable
+
+.30 00;30
+.31 00;31
+.32 00;32
+.33 00;33
+.34 00;34
+.35 00;35
+.36 00;36
+.37 00;37
+.38 00;38
+
+.130 01;30
+.131 01;31
+.132 01;32
+.133 01;33
+.134 01;34
+.135 01;35
+.136 01;36
+.137 01;37
+.138 01;38
+
+# This is for files with execute permission (yellow)
+EXEC 	00;38;5;136 #01;38;5;64
+# dos and other OS executables
+.cmd 	00;38;5;136
+.exe 	00;38;5;136
+.com 	00;38;5;136
+.btm 	00;38;5;136
+.bat 	00;38;5;136
+.app 	00;38;5;136
+.php 	00;38;5;136
+
+# document files (green)
+.doc 	01;38;5;64
+.docx 	01;38;5;64
+.rtf 	01;38;5;64
+.txt 	01;38;5;64
+.xls 	01;38;5;64
+.xlsx 	01;38;5;64
+.ppt 	01;38;5;64
+.pptx 	01;38;5;64
+.odt 	01;38;5;64
+.pdf 	01;38;5;64
+.xml	01;38;5;64
+.html	01;38;5;64
+.tpl    01;38;5;64
+.css    01;38;5;64
+
+
+## Archives or compressed (violet)
+.tar    00;38;5;61
+.tgz    01;38;5;61
+.arj    01;38;5;61
+.taz    01;38;5;61
+.lzh    01;38;5;61
+.lzma   01;38;5;61
+.tlz    01;38;5;61
+.txz    01;38;5;61
+.zip    01;38;5;61
+.z      01;38;5;61
+.Z      01;38;5;61
+.dz     01;38;5;61
+.gz     01;38;5;61
+.lz     01;38;5;61
+.xz     01;38;5;61
+.bz2    01;38;5;61
+.bz     01;38;5;61
+.tbz    01;38;5;61
+.tbz2   01;38;5;61
+.tz     01;38;5;61
+.deb    01;38;5;61
+.rpm    01;38;5;61
+.jar    01;38;5;61
+.rar    01;38;5;61
+.ace    01;38;5;61
+.zoo    01;38;5;61
+.cpio   01;38;5;61
+.7z     01;38;5;61
+.rz     01;38;5;61
+.apk    01;38;5;61
+.gem    01;38;5;61
+.dmg    01;38;5;61
+.cab    01;38;5;61
+.msi    01;38;5;61
+
+# Files of special interest (base1 + bold)
+*Makefile        01;38;5;245
+*Rakefile        01;38;5;245
+*build.xml       01;38;5;245
+*rc              01;38;5;245
+.nfo             01;38;5;245
+*README          01;38;5;245
+*README.txt      01;38;5;245
+*readme.txt      01;38;5;245
+*README.md       01;38;5;245
+*README.mkd      01;38;5;245
+.ini             01;38;5;245
+.yml             01;38;5;245
+.cfg             01;38;5;245
+.conf            01;38;5;245
+.cnf             01;38;5;245
+.htaccess		 01;38;5;245
+
+# "unimportant" files as logs and backups (darker)
+.log        00;38;5;240
+.log.1      00;38;5;240
+.bak        00;38;5;240
+.aux        00;38;5;240
+.part       00;38;5;240
+.incomplete 00;38;5;240
+.swp        00;38;5;240
+.tmp        00;38;5;240
+.temp       00;38;5;240
+.o          00;38;5;240
+.pyc        00;38;5;240
+.class      00;38;5;240
+.cache      00;38;5;240
+.old        00;38;5;240
+
+# Audio formats (red)
+.aac    31
+.au     31
+.flac   31
+.mid    31
+.midi   31
+.mka    31
+.mp3    31
+.mpc    31
+.ogg    31
+.ra     31
+.wav    31
+.m4a    31
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+.axa    31
+.oga    31
+.spx    31
+.xspf   31
+
+# Video formats (magenta)
+.mov    35
+.mpg    35
+.mpeg   35
+.m2v    35
+.mkv    35
+.ogm    35
+.mp4    35
+.m4v    35
+.mp4v   35
+.vob    35
+.qt     35
+.nuv    35
+.wmv    35
+.asf    35
+.rm     35
+.rmvb   35
+.flc    35
+.avi    35
+.fli    35
+.flv    35
+.gl     35
+.m2ts   35
+.divx   35
+.webm   35
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+.axv 35
+.anx 35
+.ogv 35
+.ogx 35
+
+# Image formats (cyan)
+.jpg    36
+.JPG    36 #stupid but needed
+.jpeg   36
+.gif    36
+.bmp    36
+.pbm    36
+.pgm    36
+.ppm    36
+.tga    36
+.xbm    36
+.xpm    36
+.tif    36
+.tiff   36
+.png    36
+.svg    36
+.svgz   36
+.mng    36
+.pcx    36
+.dl     36
+.xcf    36
+.xwd    36
+.yuv    36
+.cgm    36
+.emf    36
+.eps    36
+.CR2    36
+.ico    36
+.psd    36
+
