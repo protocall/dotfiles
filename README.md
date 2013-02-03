@@ -1,3 +1,4 @@
 dotfiles
 ========
-Custom tmux, bash, dircolors, etc.
+Custom configs for tmux, bash, dircolors, etc.
+Clone and dump into home directory.
