@@ -43,6 +43,7 @@ case ${HOSTNAME} in	#nerdify hostnames for my local vms
 		;;
 	*)
 		hcolor='\[\033[00m\]\h '
+		;;
 esac
 # ensure color support, compare TERM to dircolors list
 use_color=false
