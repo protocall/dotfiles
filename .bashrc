@@ -41,6 +41,8 @@ case ${HOSTNAME} in	#nerdify hostnames for my local vms
 	titan*)
 		hcolor='\[\033[00;33m\]\h ' #titan is brown
 		;;
+	*)
+		hcolor='\[\033[00m\]\h '
 esac
 # ensure color support, compare TERM to dircolors list
 use_color=false
